@@ -1,37 +1,27 @@
 #!/bin/python
-import random
+from random import random
 def Ll1():
 	ll1 = [3,4,4,5,5,5,6]
-	i = (7*random.random())//1
-	i = int(i)
-	x = ll1[i]
-	return x
+	i = int(7*random())
+	return ll1[i]
 
 def Ll2():
 	ll1 = [3,4,4,4,5]
-	i = (5*random.random())//1
-	i = int(i)
-	x = ll1[i]
-	return x
+	i = int(5*random())
+	return ll1[i]
 
 def V1():
 	ll1 = [3,4,4,4,4,5,5,5,6]
-	i = (9*random.random())//1
-	i = int(i)
-	x = ll1[i]
-	return x
+	i = int(9*random())
+	return ll1[i]
 
 def V2():
 	ll1 = [3,3,3,4,4,4,5,5]
-	i = (8*random.random())//1
-	i = int(i)
-	x = ll1[i]
-	return x
+	i = int(8*random())
+	return ll1[i]
 
 def media(x):
-	suma = 0
-	for i in range(0,len(x)):
-		suma = suma + x[i]
+	suma = sum(x)
 	return float(suma)/float(len(x))
 
 def var(x):
